@@ -3,7 +3,7 @@
 #10-03-2011
 import time
 import random
-from Tkinter import *
+from tkinter import *
 
 def saturate(v, lim):
     if v > lim:
@@ -67,7 +67,7 @@ playon = True
 next_p = -1
 
 while playon:
-    full = range(l)
+    full = list(range(l))
     w.delete(ALL)
     master.title("N = "+str(l))
     for i in full:                      #Setup
@@ -79,7 +79,7 @@ while playon:
         player[i]['ay']=0               #Initial acceleration
         player[i]['ax']=0
         
-        choose = range(l-1)
+        choose = list(range(l-1))
         for j in choose:
             if choose[j] >= i:
                 choose[j] = choose[j]+1
