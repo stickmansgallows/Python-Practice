@@ -3,7 +3,7 @@
 #10-03-2011
 import time
 import random
-from tkinter import *
+from Tkinter import *
 
 def saturate(v, lim):
     if v > lim:
